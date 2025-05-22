@@ -1,1 +1,182 @@
 
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>狀杰企業有限公司</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      line-height: 1.6;
+      background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1950&q=80') no-repeat center center fixed;
+      background-size: cover;
+      color: #333;
+    }
+    header {
+      background: rgba(241, 106, 43, 0.9);
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    .container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 1rem;
+      max-width: 1200px;
+      margin: 2rem auto;
+      border-radius: 8px;
+    }
+    section {
+      margin-bottom: 2rem;
+    }
+    h2 {
+      color: #f16a2b;
+      margin-bottom: 0.5rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1rem;
+    }
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .product-gallery {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .product-gallery img {
+      max-width: 300px;
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+    footer {
+      background: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+    .subscribe {
+      display: flex;
+      flex-direction: column;
+      max-width: 400px;
+      margin: auto;
+    }
+    .subscribe input[type="email"] {
+      padding: 0.5rem;
+      margin-bottom: 0.5rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    .subscribe button {
+      padding: 0.5rem;
+      background: #f16a2b;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    nav {
+      background: rgba(255, 255, 255, 0.8);
+      padding: 0.5rem 1rem;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #f16a2b;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>廚房家電與用品販售｜安裝與服務一站式</h1>
+  </header>
+
+  <nav>
+    <a href="#services">服務項目</a>
+    <a href="#products">產品介紹</a>
+    <a href="#gallery">產品照片</a>
+    <a href="#contact">聯絡我們</a>
+    <a href="#subscribe">訂閱資訊</a>
+  </nav>
+
+  <div class="container">
+    <section id="services">
+      <h2>服務項目</h2>
+      <ul>
+        <li>商品安裝、保固登記、售後服務</li>
+        <li>直播／團購分潤合作（媽媽社團、料理部落客）</li>
+        <li>企業採購合作（餐廳、中央廚房大量採購）</li>
+      </ul>
+    </section>
+
+    <section id="products">
+      <h2>產品介紹</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>小型家電</h3>
+          <p>氣炸鍋、多功能電鍋、調理機、烤箱</p>
+        </div>
+        <div class="card">
+          <h3>鍋具／刀具</h3>
+          <p>陶瓷鍋、IH鍋、砧板、料理刀</p>
+        </div>
+        <div class="card">
+          <h3>廚房收納</h3>
+          <p>不鏽鋼層架、餐具盒、轉盤架</p>
+        </div>
+        <div class="card">
+          <h3>環保耗材</h3>
+          <p>可水洗廚房紙巾、食物袋、玻璃保鮮盒</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <h2>產品照片</h2>
+      <div class="product-gallery">
+        <img src="https://images.unsplash.com/photo-1606755962773-bc3f28c41ad4?auto=format&fit=crop&w=600&q=80" alt="氣炸鍋">
+        <img src="https://images.unsplash.com/photo-1627308595229-7830a5c91f9f?auto=format&fit=crop&w=600&q=80" alt="多功能電鍋">
+        <img src="https://images.unsplash.com/photo-1608250619644-cbabb6b5c3c4?auto=format&fit=crop&w=600&q=80" alt="調理機">
+        <img src="https://images.unsplash.com/photo-1622495893966-e74613d0b9d9?auto=format&fit=crop&w=600&q=80" alt="玻璃保鮮盒">
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>聯絡我們</h2>
+      <p>歡迎洽詢團購／批發合作：example@example.com</p>
+    </section>
+
+    <section id="subscribe">
+      <h2>訂閱最新資訊</h2>
+      <form class="subscribe">
+        <input type="email" placeholder="輸入您的電子信箱" required>
+        <button type="submit">立即訂閱</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    &copy; 2025 狀杰企業有限公司 | All rights reserved
+     <div>
+          <p>統編：60791657</p>
+        </div>
+  </footer>
+</body>
+</html>
